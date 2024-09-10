@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6b6b9e;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgb(164, 167, 207);
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ccbceb1a;
+  }
+  
+  h1, h2 {
+    color: #040731;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  input[type="text"], input[type="email"], textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #2e3370;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #072c4b;
+    color: white;
+    border: none;
+    padding:10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #09134b;
+  }
+  
+  #resume-preview {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  #resume-output {
+    white-space: pre-line; /* To preserve line breaks */
+  }
+  /* Classic Template */
+.classic h3 {
+    font-family: 'Times New Roman', serif;
+    font-size: 24px;
+  }
+  
+  .classic p {
+    font-family: 'Georgia', serif;
+  }
+  
+  /* Modern Template */
+  .modern h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    border-bottom: 2px solid #333;
+  }
+  
+  .modern p {
+    font-family: 'Verdana', sans-serif;
+  }
+  
+  /* Minimalist Template */
+  .minimalist h3 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;
+  }
+  
+  .minimalist p {
+    font-family: 'Helvetica', sans-serif;
+  }
+  /* Light Theme */
+.light-theme body {
+    background-color: #f4f4f9;
+    color: #333;
+  }
+  
+  /* Dark Theme */
+  .dark-theme body {
+    background-color: #333;
+    color: #f4f4f9;
+  }
+  /* Define the fade-in animation */
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to the preview container */
+  #resume-output {
+    animation: fadeIn 1s ease-in;
+  }
+  /* Keyframe animation for sliding in */
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Apply the animation to experience items */
+  .experience-item {
+    animation: slideIn 0.4s ease-out;
+  }
+  /* Input field focus animation */
+input:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.5); /* Green glow */
+    transition: box-shadow 0.3s ease, border-color 0.3s ease;
+  }
+  /* Progress bar container */
+#progress-bar-container {
+    width: 100%;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin: 20px 0;
+  }
+  
+  /* Actual progress bar */
+  #progress-bar {
+    width: 0;
+    height: 20px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.4s ease; /* Smooth width transition */
+  }
+  
